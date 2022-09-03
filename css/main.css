@@ -597,7 +597,23 @@ section.footer .container {
         margin-top: 20%;
     }
  }
- 
+@media(max-width:425px){
+    .section-header .container .w-50 form.d-flex.w-75 {
+        width: 100% !important;
+        margin: auto !important;
+        margin-left: unset !important;
+        
+    }
+    .btn-search {
+        top: 8% !important;}
+    section.form-book {
+        padding: 4% 0%;
+    }
+    section.form-book  .input-form.d-flex.justify-content-center.flex-row-reverse.text-center {
+        flex-direction: column !important;
+    }
+    section.form-book  .form-book-input {padding: unset !important;}
+}
  @media (min-width: 768px){
     .col-md-4 {
     flex: 0 0 auto;
