@@ -3,6 +3,10 @@ body{
     font-family: cairo;
     
 }
+a.btn:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+}
 .discount .cards .card:before,.all-books .cards .card:before {
     content: "20%";
     position: absolute;
@@ -38,33 +42,29 @@ body{
 .text-right{
     text-align: right;
 }
-/* .w-25{
-    width: 24% !important;
-} */
-/* .header{background-color: #f8f9fa;} */
+
 .logo{
     width: 10%;
 }
-.btn .nav-link{
+
+div#navbarSupportedContent {
+    direction: rtl;
+}
+ul.navbar-nav.ml-auto {
+    margin-left: 7%;
+}
+ a.nav-link{
     direction: rtl;
     color: #262649;
-    font-weight: 600;
+    
     
 }
-/* .btn .nav-link i{font-family: cairo;} */
-.btn .nav-link i::before{
-    font-size: 22px;
-    padding-left: 5px;
-}
-.mob-menu{
-    display: none;
+a.nav-link i::before{
+    font-size: 16px;
+   
+      color: #262649;
 }
 
-/* @media screen {max-width:600px;}{
-    .mob-menu{
-        display: block;
-    }
-} */
 /* end header */
 /* start section-header */
 .section-header .container h1 , .section-header .container p {text-align: right;}
@@ -165,7 +165,7 @@ button.splide__pagination__page {
 .price-icon .icons{  
     color: #fbff00;
     text-align: center;
-    /* margin-right: 8%; */
+    
 }
 a.btn.btn-colors {
     direction: rtl;
@@ -193,7 +193,7 @@ a.btn.btn-colors i{
 /* end discount */
 /* .owl-stage-outer .owl-item {width: 8% !important;}
 .owl-item{width: 8% !important;} */
-.owl-carousel .owl-stage-outer{position: unset;}
+/* .owl-carousel .owl-stage-outer{position: unset;}
 .owl-stage{
     gap: 20px 1% !important;
     width: 2997px !important;
@@ -278,7 +278,7 @@ button.owl-next:before {
     background-color: #E7F6F8;
     border-radius: 9px;
     margin: 0 5%;
-}
+} */
 /* start Features */
 .carousel-indicators {
     bottom: -46px;
@@ -332,6 +332,22 @@ section.Features-book .container .cards .card.card-features .content .btn-card a
     border-bottom-right-radius: 9px;
     border-top-right-radius: 9px;
     text-align: center;
+}
+.price.w-50.d-flex p {
+    background-color: #e7f6f8;
+    padding: 4%;
+    border-radius: 9px;
+}
+.btn-Features-book{
+    direction: rtl;
+    background-color:#246F86;
+    padding: 2%;
+    border-radius: 9px;
+    text-decoration: none;
+}
+a.btn-Features-book.btn-colors:hover {
+    background: #000;
+    color: #fff;
 }
 /* end Features  */
 /* start */
@@ -469,21 +485,33 @@ section.footer .container {
     border-bottom-right-radius:9px ;
 }
 /* end footer */
-/*  start media responsive */
-/* @media{max-width:1400px ;}{
-    .section-header .container .row{
-        display: block !important;
-    }
-}
 
-@media screen {max-width:1400px ;}{
-    .section-header .container .row{
-        display: block !important;
+     
+ @media (max-width: 1200px){ 
+    section.section-header .container .row .imgs img {
+        width: 100%;
     }
-}
-     */
-@media (max-width: 1200px){ 
-    .w-50{width: 100% !important;
+    section.sarvices .container {
+        width: 100% !important;
+    }
+    .section-header .container h1 {
+        font-size: 2.5rem;
+    }
+  
+ } 
+ @media(min-width:769px) and (max-width:1024px){
+    section.Features-book .container .row div#splide02 .col-md-4 {
+        width: 33.33333333% !important;
+    }
+ }
+ @media(max-width:1024px){
+  
+    div#navbarSupportedContent {
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .div-card .card {
+        max-width: 300px !important;
     }
  }
  @media(max-width:900px){
@@ -496,9 +524,12 @@ section.footer .container {
         flex: 0 0 auto;
         width: 100% !important ;
     }
-    .form-control {margin-bottom: 5%;}
+    .form-control {
+        margin-bottom: 5%;
+        font-size: 13px;
+    }
     img {
-        width: 540px;
+        width: 410px;
         height: auto;
     }
     .imgs i {
@@ -513,6 +544,9 @@ section.footer .container {
         top: 40%;
         right: 80%;
     }
+    section.sarvices .container .row h5 {
+        font-size: 16px;
+    }
     .card-discount-book{ width: 66%!important;}
     .card-Features-book {
     width: 100% !important;
@@ -524,11 +558,19 @@ section.footer .container {
 
 }
 @media (max-width: 576px){
-    .col-sm-12{width: calc(60.3333%) !important;
+    a.navbar-brand img {
+        width: 100px !important;
     }
-    .owl-item{width: 600px;}
-    .owl-stage-outer .owl-nav button.owl-next:before,.owl-stage-outer .owl-nav button.owl-prev:before  {width: 250% !important;}
-
+    .div-card{flex-direction: column;}
+    .selsela-books-img{
+        margin: auto 42px;
+        width: 100%;
+    }
+    .row-section .card:before {height: 5%;}
+    .div-card .card {
+        margin: 18px auto;
+        max-width: 385px !important;
+    }
  }
  
  @media (min-width: 768px){
