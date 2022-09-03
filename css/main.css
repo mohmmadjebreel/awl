@@ -472,6 +472,9 @@ section.footer .container {
 .logo-footer {
     border-left: 2px solid #246F86;
 }
+.logo-footer img {
+    object-fit: cover;
+}
 .icons-div-footer {
     border-right: 2px solid #246F86;
     height: 501px;
@@ -504,6 +507,11 @@ section.footer .container {
         width: 33.33333333% !important;
     }
  }
+ @media(min-width:1024px) and (max-width:1400px){
+    .logo-footer img {
+        object-fit: contain;
+    }
+ }
  @media(max-width:1024px){
   
     div#navbarSupportedContent {
@@ -512,6 +520,10 @@ section.footer .container {
     }
     .div-card .card {
         max-width: 300px !important;
+    }
+    .logo-footer img {
+        object-fit: contain;
+        width: 200px;
     }
  }
  @media(max-width:900px){
@@ -561,6 +573,12 @@ section.footer .container {
     a.navbar-brand img {
         width: 100px !important;
     }
+    .price-icon .icons {
+        width: 82%;
+    }
+    a.btn.btn-colors {
+        font-size: 12px;
+    }
     .div-card{flex-direction: column;}
     .selsela-books-img{
         margin: auto 42px;
@@ -570,6 +588,13 @@ section.footer .container {
     .div-card .card {
         margin: 18px auto;
         max-width: 385px !important;
+    }
+    .icons-div-footer {
+        border-right: 2px solid #246F86;
+        height: auto !important;
+    }
+    .icons-footer.text-center {
+        margin-top: 20%;
     }
  }
  
