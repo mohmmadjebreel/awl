@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css"> -->
+        <link rel="stylesheet" href="css/splide.min.css">
+
         <link href="css/bootstrap.rtl.min.css.map" rel="stylesheet">
         <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
         <link href="css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
         <link href="css/main.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,61 +24,69 @@
                 <!-- start section header -->
         <section class="header">
             <div class="container">
-                <header class="d-flex justify-content-between ">
+                <div class="row">
+
+                    <header class="d-flex justify-content-between ">
                    
-                    <nav class="navbar navbar-expand-lg navbar-light  ">
-                        <div class="container-fluid ">
-                            <div class="btn-header btn d-flex">
-                                <a class="nav-link" href="#"> <i class="fa-solid fa-bag-shopping"> </i>سلة المشتريات</a>
-                                <a class="nav-link" href="#"> <i class="fa-solid fa-heart"></i>المفضلة</a>
-                                <a class="nav-link" href="#"> <i class="fa-solid fa-user"></i>اسم المستخدم</a>
+                        <nav class="navbar navbar-expand-lg navbar-light  ">
+                            <div class="container-fluid ">
+                                <div class="btn-header btn d-flex">
+                                    <a class="nav-link" href="#"> <i class="fa-solid fa-bag-shopping"> </i>سلة المشتريات</a>
+                                    <a class="nav-link" href="#"> <i class="fa-solid fa-heart"></i>المفضلة</a>
+                                    <a class="nav-link" href="#"> <i class="fa-solid fa-user"></i>اسم المستخدم</a>
+                                </div>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+                                <div class="navbar-nav d-flex justify-content-end flex-row-reverse">
+                                  <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                                  <a class="nav-link" href="#">كيفية عمل طلبية </a>
+                                  <a class="nav-link" href="#"> أراء الطالب بنا</a>
+                                  <a class="nav-link " href="#">ملفات مجانية</a>
+                                  <a class="nav-link " href="#">الاختبارات الالكترونية</a>
+                                  <a class="nav-link " href="#">افضل معلم</a>
+                                </div>
+                              </div>
+                              <img class="logo" src="../awl/imgs/logo.png" alt="logo">
+                             
                             </div>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-                            <div class="navbar-nav d-flex justify-content-end flex-row-reverse">
-                              <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
-                              <a class="nav-link" href="#">كيفية عمل طلبية </a>
-                              <a class="nav-link" href="#"> أراء الطالب بنا</a>
-                              <a class="nav-link " href="#">ملفات مجانية</a>
-                              <a class="nav-link " href="#">الاختبارات الالكترونية</a>
-                              <a class="nav-link " href="#">افضل معلم</a>
-                            </div>
-                          </div>
-                          <img class="logo" src="../awl/imgs/logo.png" alt="logo">
-                         
+                          </nav>
+                       
+                        <div class="mob-menu">
+                            <i class="fa-solid fa-bars"></i> 
                         </div>
-                      </nav>
-                   
-                    <div class="mob-menu">
-                        <i class="fa-solid fa-bars"></i> 
-                    </div>
-                </header>
+                    </header>
+                </div>
+               
             </div>
         </section>
         <!-- start section header -->
         <!-- start -->
         <section class="section-header">
-            <div class="container d-flex justify-content-between align-items-center ">
-                <div class="imgs w-50 position-relative ">
-                    <img src="../awl/imgs/awl-img.png" alt="logo">
-                    <i class="fa-regular fa-atom position-absolute"></i>
-                    <i class="fa-solid fa-brain position-absolute"></i>
-                    <i class="fa-solid fa-square-root-variable position-absolute"></i>
-                   
+            <div class="container  ">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="imgs w-50 position-relative col-lg-6 col-md-12 col-sm-12 ">
+                        <img src="../awl/imgs/awl-img.png" alt="logo">
+                        <i class="fa-regular fa-atom position-absolute"></i>
+                        <i class="fa-solid fa-brain position-absolute"></i>
+                        <i class="fa-solid fa-square-root-variable position-absolute"></i>
+                       
+                    </div>
+                    <div class="w-50  col-lg-6 col-sm-12 col-md-12  ">
+                        <h1 class="text-align-end py-3">الأول<span> مجموعة ضخمة 
+                         </span><br>من الكراسات المدرسية</h1>
+                         <p class="text-muted py-3 ">هذا النص هو مثال لنص يمكن أن يستبدل في نفس 
+                            <br> المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
+                            <form class="d-flex w-75 position-relative my-5">
+                             <input class="form-control  py-3" type="search" placeholder=" البحث باسم الكتاب ,المعلم,الفصل وغيره " aria-label="Search">
+                             <button class="btn btn-outline-success py-2 btn-search position-absolute" type="submit">بحث</button>
+                           </form>
+     
+                     </div>
                 </div>
-                <div class="w-50 ">
-                   <h1 class="text-align-end py-3">الأول<span> مجموعة ضخمة 
-                    </span><br>من الكراسات المدرسية</h1>
-                    <p class="text-muted py-3 ">هذا النص هو مثال لنص يمكن أن يستبدل في نفس 
-                       <br> المساحة، لقد تم توليد هذا النص من مولد النص العربى</p>
-                       <form class="d-flex w-75 position-relative">
-                        <input class="form-control me-2 py-3" type="search" placeholder=" البحث باسم الكتاب ,المعلم,الفصل وغيره " aria-label="Search">
-                        <button class="btn btn-outline-success py-2 btn-search position-absolute" type="submit">بحث</button>
-                      </form>
-
-                </div>
+              
+                
             </div>
         </section> 
         <!-- end -->
@@ -101,14 +113,15 @@
         <!-- start discount books -->
         <section class="discount">
             <div class="container">
-                <div class="h3-title py-5">
-                    <h3>أفضل الخصومات لدينا</h3>
-                </div>
+                <div class="row">
+                    <div class="h3-title py-5">
+                        <h3>أفضل الخصومات لدينا</h3>
+                    </div>
                     <div class="cards">
                         <div class="splide">
                             <div class="splide__track">
                                 <div class="splide__list">
-                                    <div class="col-sm-4 splide__slide m-1 w-25">
+                                    <div class="card-discount-book   splide__slide ">
                                         <div class="card bg-light text-dark">
                                             <div class="card-body ">
                                                 <img src="imgs/deen12.jpg" alt="book">
@@ -133,7 +146,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4 splide__slide m-1 w-25">
+                                    <div class="card-discount-book  splide__slide ">
                                         <div class="card bg-light text-dark">
                                             <div class="card-body ">
                                                 <img src="imgs/deen12.jpg" alt="book">
@@ -158,7 +171,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4 splide__slide m-1 w-25">
+                                    <div class="card-discount-book   splide__slide ">
                                         <div class="card bg-light text-dark">
                                             <div class="card-body ">
                                                 <img src="imgs/deen12.jpg" alt="book">
@@ -184,7 +197,59 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4 splide__slide m-1 w-25">
+                                    <div class=" card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" card-discount-book   splide__slide ">
                                         <div class="card bg-light text-dark">
                                             <div class="card-body ">
                                                 <img src="imgs/deen12.jpg" alt="book">
@@ -214,18 +279,27 @@
                             </div>
                         </div>
                     </div>
+                </div>
+              
+                    
                     
                 </div>
             </div>
         </section>
         <!-- end discount books -->
+       
+       
         <!-- start Features-book -->
         <section class="Features-book">
             <div class="container">
-                <div class="h3-title py-5">
-                    <h3>كتب مميزة </h3>
-                </div>
-                <div class="cards">
+                <div class="row">
+                    <div class="h3-title py-5">
+                        <h3>كتب مميزة </h3>
+                    </div>
+                    
+               
+                
+                <!-- <div class="cards">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -234,7 +308,7 @@
                         </div>
                         <div class="carousel-inner ">
                           <div class="carousel-item d-flex active">
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -260,7 +334,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -286,7 +360,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -312,7 +386,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -367,7 +441,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -393,7 +467,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class=" card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -419,7 +493,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class=" card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -447,7 +521,7 @@
                             </div>
                           </div>
                           <div class="carousel-item d-flex">
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class=" card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -473,7 +547,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -499,7 +573,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class=" card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -525,7 +599,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4 splide__slide m-1 w-25">
+                            <div class="card-Features-book col-sm-4 splide__slide m-1 w-25">
                                 <div class="card card-features bg-light text-dark">
                                     
                                     <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -561,11 +635,12 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
-                    <!-- <div class="splide">
+                      </div> -->
+                      <!-- slide-book -->
+                    <div class="splide">
                         <div class="splide__track">
                             <div class="splide__list">
-                                <div class="col-sm-4 splide__slide m-1 w-25">
+                                <div class="col-lg-4 col-md-4 col-sm-12 splide__slide  w-25">
                                     <div class="card card-features bg-light text-dark">
                                         
                                         <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -591,7 +666,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
+                                <div class="col-lg-4 col-md-4 col-sm-12 splide__slide  w-25">
                                     <div class="card card-features bg-light text-dark">
                                         
                                         <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -617,7 +692,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
+                                <div class="col-lg-4 col-md-4 col-sm-12 splide__slide  w-25">
                                     <div class="card card-features bg-light text-dark">
                                         
                                         <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -643,7 +718,59 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
+                                <div class="col-lg-4 col-md-4 col-sm-12 splide__slide  w-25">
+                                    <div class="card card-features bg-light text-dark">
+                                        
+                                        <img class="img-card" src="imgs/deen12.jpg" alt="book" >
+                                        <div class="content">
+                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                <div class="icons">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="price w-50 d-flex ">
+                                                    <p>₪30</p>
+                                                    <p>₪30</p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 splide__slide  w-25">
+                                    <div class="card card-features bg-light text-dark">
+                                        
+                                        <img class="img-card" src="imgs/deen12.jpg" alt="book" >
+                                        <div class="content">
+                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                <div class="icons">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <div class="price w-50 d-flex ">
+                                                    <p>₪30</p>
+                                                    <p>₪30</p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12 splide__slide  w-25">
                                     <div class="card card-features bg-light text-dark">
                                         
                                         <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -671,7 +798,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <!-- slide-book -->
+                </div>
                 </div>
             </div>
         </section>
@@ -694,8 +823,8 @@
                     <div class="col-8">
                       <div class="tab-content  py-5" id="nav-tabContent">
                         <div class="tab-pane  fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                            <div class="vertical-align d-flex justify-content-around">
-                                <div class="card mb-3 " style="max-width: 385px; ">
+                            <div class="vertical-align d-flex justify-content-around py-3">
+                                <div class="card col-lg-4 col-mb-4 col-sm-12 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
@@ -728,7 +857,7 @@
                                             </div>
                                         </div>
                                   </div>
-                                  <div class="card mb-3 " style="max-width: 385px; ">
+                                  <div class="card col-lg-4 col-mb-4 col-sm-12 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
@@ -761,7 +890,7 @@
                                             </div>
                                         </div>
                                   </div>
-                                  <div class="card mb-3 " style="max-width: 385px; ">
+                                  <div class="card col-lg-4 col-mb-4 col-sm-12 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
@@ -2024,354 +2153,209 @@
             </div>
         </section>
         <!-- end selsela-books -->
-        <!-- start any books -->
-        <section class="any-books">
+        <!-- start All books -->
+        <section class="all-books py-5">
             <div class="container">
-                <div class="h3-title py-5">
-                    <h3>جميع الكتب</h3>
-                </div>
-                    <div class="cards"> 
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                              <div class="carousel-item d-flex active">
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
+                <div class="row">
+                    <div class="h3-title py-5">
+                        <h3>جميع الكتب</h3>
+                    </div>
+                    <div class="cards">
+                            <div class="splide">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="all-books card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
                                                 </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
                                                 </div>
                                             </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="all-books card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="all-books card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="all-books card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="all-books card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="all-books  card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" card-discount-book   splide__slide ">
+                                        <div class="card bg-light text-dark">
+                                            <div class="card-body ">
+                                                <img src="imgs/deen12.jpg" alt="book">
+                                                <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+                                                <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+                                                    <div class="icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <div class="price w-50 d-flex ">
+                                                        <p>₪30</p>
+                                                        <p>₪30</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+                                                    <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+                                                    <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item d-flex">
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <div class="carousel-item d-flex">
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 splide__slide m-1 w-25">
-                                    <div class="card bg-light text-dark">
-                                        <div class="card-body ">
-                                            <img src="imgs/deen12.jpg" alt="book">
-                                            <h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
-                                            <div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
-                                                <div class="icons">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <div class="price w-50 d-flex ">
-                                                    <p>₪30</p>
-                                                    <p>₪30</p>
-                                                </div>
-                                            </div>
-                                            <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
-                                                <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn btn-colors"><i class="fa-regular fa-heart"></i></a>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                              </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                          
+                        </div>
                     </div>
-                    <div class="btn-card py-5 d-flex justify-content-center ">
-                        <a href="#" class="btn btn-colors"><i class="fa-solid fa-book-open"></i>المزيد من الكتب</a>
-                    </div>
+                </div>
+              
+                    
                     
                 </div>
             </div>
         </section>
-        <!-- end any books -->
+        <!-- end all books -->
         <!-- start form book -->
         <section class="form-book">
             <div class="container py-3">
@@ -2397,6 +2381,7 @@
 
         <section class="footer pt-5 ">
             <div class="container d-flex justify-content-between flex-row-reverse align-items-center">
+               <div class="row">
                 <div class="logo-footer ">
                     <img src="imgs/logo.png" alt="">
                 </div>
@@ -2429,6 +2414,7 @@
                                 </div>
                     </div>
                 </div>
+               </div>
                 
             </div>
         </section>
@@ -2443,17 +2429,84 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
-        <script>
-            var splide = new Splide('.splide', {
-                type: 'loop',
-                perPage: 3,
-                rewind: true,
-            });
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script> -->
+        <script src="js/splide.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>   
 
-            splide.mount();
+            // owl carousel init
+            $('.owlCarousel1').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: false,
+                stagePadding: -5,
+                responsiveBaseElement: 'body',
+                responsive:
+                 {
+                    0: {
+                        items: 1,
+                    },
+                    700: {
+                        items: 3,
+                    },
+                    1220: {
+                        items: 4,
+                    },
+                },
+            });
+            $('.owl-carousel2').owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                dots: true,
+                stagePadding: -5,
+                responsiveBaseElement: 'body',
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    700: {
+                        items: 2,
+                    },
+                    1220: {
+                        items: 3,
+                    },
+                },
+            });
+            
+            </script>
+        <script>
+            var elms = document.getElementsByClassName( 'splide' );
+
+            for ( var i = 0; i < elms.length; i++ ) {
+            new Splide( elms[ i ] ).mount();
+            new Splide(elms[i+1]),{
+                    type:'loop',
+                     perPage: 4,
+                    gap    : '2rem',
+                    breakpoints: {
+                    1200: { fixedWidth: 200 },
+                    800 : { perPage: 2 },
+                    640 : {perPage: 1,
+                    gap    : '5px',},
+                    480: {
+                    perPage: 1,
+                    gap    : '5px',
+                
+                    },
+            
+            }}}
           
+
+           
+
         </script>
+       
+       
         <!-- end js -->
     </body>
 </html>
