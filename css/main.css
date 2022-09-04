@@ -50,6 +50,7 @@ a.btn:hover {
 div#navbarSupportedContent {
     direction: rtl;
 }
+
 ul.navbar-nav.ml-auto {
     margin-left: 7%;
 }
@@ -79,6 +80,10 @@ a.nav-link i::before{
     color: #246f86;
     border-color: #246f86;}
 .btn-search:hover{background-color: #246F86;}
+.imgs img {
+   
+    max-width: 100%;
+}
 .imgs i {font-weight: 900;
     top: 15%;
     right: 12%;
@@ -510,6 +515,9 @@ section.footer .container {
  @media(min-width:1024px) and (max-width:1400px){
     .logo-footer img {
         object-fit: contain;
+    }
+    div#navbarSupportedContent ul:nth-child(1) li {
+        font-size: 11px;
     }
  }
  @media(max-width:1024px){
