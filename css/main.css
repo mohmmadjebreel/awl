@@ -195,95 +195,12 @@ a.btn.btn-colors i{
     border-radius: 9px;
     margin: 0 5%;
 }
+.price.w-50.d-flex p:nth-child(1) {
+    background-color: red;
+    color: #fff;
+}
 /* end discount */
-/* .owl-stage-outer .owl-item {width: 8% !important;}
-.owl-item{width: 8% !important;} */
-/* .owl-carousel .owl-stage-outer{position: unset;}
-.owl-stage{
-    gap: 20px 1% !important;
-    width: 2997px !important;
 
-}
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-    display: block;
-    font-size: 63px;
-    color: #262649;
-    display: flex;
-    justify-content: space-between;
-    
-}
-button.owl-next {
-    top: 30%;
-    position: absolute;
-    right: 0px;
-}
-button.owl-prev {
-    top: 30%;
-    position: absolute;
-}
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #ffffff;
-}
-.owl-theme .owl-nav [class*=owl-]{
-    background-color: #262649;
-}
-.owl-theme .owl-nav [class*=owl-]:hover {
-    background: #246f86;}
-button.owl-next span , button.owl-prev span {
-    display: none;
-}
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-    background: 0 0;
-    color: inherit;
-    border: none;
-    padding: 0!important;
-    font: inherit;
-    height: 4%;
-    width: 2%;
-}
-button.owl-next:before {
-    content: ">";
-     background-color: #262649;
-     width: 160%;
-     height: 160%;
-     top: 50px;
-     right: 0;
-     position: absolute;
-     font-size: 19px;
-     border: 1px solid #262649;
-     border-radius: 5px;
-     color: #fff;
-     font-family: 'Cairo';
- }
- button.owl-prev:before {
-    content: "<";
-     background-color: #262649;
-     width: 160%;
-     height: 160%;
-     top: 50px;
-     right: 0;
-     position: absolute;
-     font-size: 19px;
-     border: 1px solid #262649;
-     border-radius: 5px;
-     color: #fff;
-     font-family: 'Cairo';
- }
- button.owl-prev:before:hover{
-    background-color: #fff;
-    color: #262649;
- }
-.owl-theme .owl-nav [class*=owl-]:hover {
-    background: #246f8600;
-}
-.all-book-price.w-50.d-flex p {
-    display: inline-flex;
-    padding: 5%;
-    border: 1px solid #e7f6f8;
-    background-color: #E7F6F8;
-    border-radius: 9px;
-    margin: 0 5%;
-} */
 /* start Features */
 .carousel-indicators {
     bottom: -46px;
@@ -493,7 +410,26 @@ section.footer .container {
     border-bottom-right-radius:9px ;
 }
 /* end footer */
+/* start whatsapp */
+.float{
+	position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 33px;
+    box-shadow: 2px 2px 3px #33676c;
+    z-index: 100;
+}
 
+.my-float{
+	margin-top:16px;
+}
+/* end whatsapp */
      
  @media (max-width: 1200px){ 
     section.section-header .container .row .imgs img {
