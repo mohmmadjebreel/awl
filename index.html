@@ -92,7 +92,11 @@
                             </ul>
                             <ul class="navbar-nav ml-auto" style="direction: rtl;">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"> <i class="fa-solid fa-user"  style="padding: 5px;"></i>إسم المستخدم</a>
+                                    
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-user"  ></i>حسابي
+                                      </button>
+                                      
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#"> <i class="fa-solid fa-heart"  style="padding: 5px;"></i>المفضلة</a>
@@ -107,6 +111,33 @@
             </nav>
          </header>
         <!-- start section header -->
+        <!-- start login -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header d-flex flex-row-reverse">
+                  <h5 class="modal-title d-flex flex-row-reverse align-items-center" id="exampleModalLabel"><i class="fa-solid fa-user"  ></i>تسجيل دخول</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">البريد الالكتروني</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                    <div class="mb-3 ">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">كلمة المرور</label>
+                          <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    <a class="nav-link" href="#">نسيت كلمة المرور</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                  <button type="button" class="btn btn-primary">تسجيل دخول</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- end login -->
         <!-- start -->
         <section class="section-header">
             <div class="container  ">
@@ -166,7 +197,7 @@
                         <div class="splide">
                             <div class="splide__track">
                                 <div class="splide__list">
-                                    <div class="card-discount-book   splide__slide ">
+                                    <div onclick="window.location.href='product.html';" class="card-discount-book   splide__slide ">
                                         <div class="card bg-light text-dark">
                                             <div class="card-body ">
                                                 <img src="imgs/deen12.jpg" alt="book">
@@ -341,7 +372,7 @@
                     <div class="splide">
                         <div class="splide__track">
                             <div class="splide__list">
-                                <div class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+                                <div onclick="window.location.href='product.html';" class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
                                     <div class="card card-features bg-light text-dark">
                                         
                                         <img class="img-card" src="imgs/deen12.jpg" alt="book" >
@@ -466,7 +497,7 @@
                                             </div>
                                             <div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
                                                 <a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                                                <a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i> </a>
                                             </div>
                                         </div>
                                     </div>
@@ -515,7 +546,7 @@
                 <div class="row-section py-3">
                     <div class=" tabel-books col-8 w-75">
                       <div class="list-group d-flex align-items-center flex-row-reverse justify-content-around text-center" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">سلسلة الاول لألدبي</a>
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">سلسلة الاول الادبي</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">سلسلة الاول للعلمي</a>
                         <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">سلسلة الاول للتجاري</a>
                         <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">سلسلة الاول للصناعي</a>
@@ -527,7 +558,7 @@
                             <div class="div-card vertical-align d-flex justify-content-around py-3">
                                 <div class="card col-lg-4 col-mb-4 col-sm-12 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75 py-3" alt="...">
@@ -560,7 +591,7 @@
                                   </div>
                                   <div class="card col-lg-4 col-mb-4 col-sm-12 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -593,7 +624,7 @@
                                   </div>
                                   <div class="card col-lg-4 col-mb-4 col-sm-12 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -628,7 +659,7 @@
                             <div class="div-card vertical-align d-flex justify-content-around">
                                 <div class="card mb-3 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -661,7 +692,7 @@
                                   </div>
                                   <div class="card mb-3 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -694,7 +725,7 @@
                                   </div>
                                   <div class="card mb-3 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -729,7 +760,7 @@
                             <div class="div-card vertical-align d-flex justify-content-around">
                                 <div class="card mb-3 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -762,7 +793,7 @@
                                   </div>
                                   <div class="card mb-3 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -795,7 +826,7 @@
                                   </div>
                                   <div class="card mb-3 " style="max-width: 385px; ">
                                     <div class="row g-0 d-flex align-items-center flex-row-reverse justify-content-around   form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <input class="form-check-input" name="chk-list-home-list" type="checkbox" id="inlineCheckbox1" value="option1">
                                         
                                             <div class="col-md-4">
                                                 <img src="imgs/deen12.jpg" class="selsela-books-img img-fluid rounded-start w-75" alt="...">
@@ -1848,7 +1879,7 @@
                     </div>
                     <div class="btn-card btns-cart d-flex align-items-center flex-row-reverse justify-content-around w-50">
                         <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-                        <a href="#" class="btn btn-colors"><i class="fa-solid fa-bag-shopping" id="#selectAll"></i>إضافة جميع الكتب</a>
+                        <a href="#"  onclick='selects()' class="btn btn-colors"><i class="fa-solid fa-bag-shopping" id="#selectAll"></i>إضافة جميع الكتب</a>
                         
                     </div>
                     
@@ -1867,7 +1898,7 @@
                             <div class="splide">
                             <div class="splide__track">
                                 <div class="splide__list">
-                                    <div class="all-books card-discount-book   splide__slide ">
+                                    <div onclick="window.location.href='product.html';" class="all-books card-discount-book   splide__slide ">
                                         <div class="card bg-light text-dark">
                                             <div class="card-body ">
                                                 <img src="imgs/deen12.jpg" alt="book">
@@ -2083,6 +2114,109 @@
             </div>
         </section>
         <!-- end form book -->
+        <!-- start best orders -->
+        <section class="discount">
+            <div class="container">
+                <div class="row">
+                    <div class="h3-title py-5">
+                        <h3>أفضل  الطلبات خلال هذا الشهر</h3>
+                    </div>
+                    <div class="cards">
+                        <div class="splide">
+                            <div class="splide__track">
+                                <div class="splide__list">
+                                    <div class="card-best-orders   splide__slide ">
+                                        <div class="card-box bg-light text-dark text-center py-3">
+                                            <div class="best-order-vip d-block">
+                                                
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="card-body ">
+                                                <img src="imgs/IMG-20200426-WA0013.jpg" >
+                                            </div>
+                                            <h5 class="card-title">محمد جبريل </h5>
+                                            <h6 class="card-title">عدد الطلبات</h6>
+                                            <h6 class="card-title">50 </h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-best-orders   splide__slide ">
+                                        <div class="card-box bg-light text-dark text-center py-3">
+                                            <div class="best-order-vip d-block">
+                                               
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="card-body ">
+                                                <img src="imgs/Asset 1@4x-8.png" >
+                                            </div>
+                                            <h5 class="card-title">محمد جبريل </h5>
+                                            <h6 class="card-title">عدد الطلبات</h6>
+                                            <h6 class="card-title">50 </h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-best-orders   splide__slide ">
+                                        <div class="card-box bg-light text-dark text-center py-3">
+                                            <div class="best-order-vip d-block">
+                                               
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="card-body ">
+                                                <img src="imgs/Asset 1@4x-8.png" >
+                                            </div>
+                                            <h5 class="card-title">محمد جبريل </h5>
+                                            <h6 class="card-title">عدد الطلبات</h6>
+                                            <h6 class="card-title">50 </h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-best-orders   splide__slide ">
+                                        <div class="card-box bg-light text-dark text-center py-3">
+                                            <div class="best-order-vip d-block">
+                                                
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="card-body ">
+                                                <img src="imgs/Asset 1@4x-8.png" >
+                                            </div>
+                                            <h5 class="card-title">محمد جبريل </h5>
+                                            <h6 class="card-title">عدد الطلبات</h6>
+                                            <h6 class="card-title">50 </h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-best-orders   splide__slide ">
+                                        <div class="card-box bg-light text-dark text-center py-3">
+                                            <div class="best-order-vip d-block">
+                                                
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="card-body ">
+                                                <img src="imgs/Asset 1@4x-8.png" >
+                                            </div>
+                                            <h5 class="card-title">محمد جبريل </h5>
+                                            <h6 class="card-title">عدد الطلبات</h6>
+                                            <h6 class="card-title">50 </h6>
+                                        </div>
+                                    </div>
+                                    <div class="card-best-orders   splide__slide ">
+                                        <div class="card-box bg-light text-dark text-center py-3">
+                                            <div class="best-order-vip d-block">
+                                               
+                                                <span>VIP</span>
+                                            </div>
+                                            <div class="card-body ">
+                                                <img src="imgs/Asset 1@4x-8.png" >
+                                            </div>
+                                            <h5 class="card-title">محمد جبريل </h5>
+                                            <h6 class="card-title">عدد الطلبات</h6>
+                                            <h6 class="card-title">50 </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+        <!-- end best orders -->
            <!-- start footer -->
 
         <section class="footer pt-5 ">
@@ -2130,7 +2264,7 @@
         <!-- start whatsapp -->
         <section class="whatsapp">
             
-            <a href="https://api.whatsapp.com/send/?phone=970597736062" class="float" target="_blank">
+            <a href="https://api.whatsapp.com/send/?phone=972569202199" class="float" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </section>
@@ -2165,7 +2299,13 @@
             
             }}}
           
-
+            function selects(){  
+                var ele=document.getElementsByName('chk-list-home-list');  
+                for(var i=0; i<ele.length; i++){  
+                    if(ele[i].type=='checkbox')  
+                        ele[i].checked=true;  
+                }  
+            }  
            
 
         </script>
