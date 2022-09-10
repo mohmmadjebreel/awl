@@ -129,7 +129,6 @@ section.sarvices .container .row .col-3:nth-child(3){
 section.sarvices .container .row .col-3:nth-child(2) img{
     width: 18%;
     padding-left: 3%;
-    
 }
 section.sarvices .container .row .col-3:nth-child(2){
     background-color:#8383BE ;
@@ -360,6 +359,15 @@ background-color: #E7F6F8;
 .row-section a#list-home-list,.row-section a#list-profile-list,a#list-messages-list,#list-settings-list ,section.details .container .row a#list-home-list ,section.details .container .row a#list-profile-list {
     border-radius: 9px;
     margin: 0% 1%;
+}
+.btn-card.btns-cart.d-flex.align-items-center.flex-row-reverse.justify-content-around.w-50:before {
+    content: "خصم خاص على جميع الكتب";
+    position: absolute;
+    color: #fff;
+    background-color: #f00;
+    padding: 8px;
+    border-radius: 5px;
+    bottom: 8%;
 }
 
 /* end selsela */
