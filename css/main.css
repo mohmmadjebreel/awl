@@ -241,7 +241,7 @@ body section.Features-book {
     background: #262649;
     padding: 4% 0%;
     transition: 0.3s all;
-    transform: translatey(102px);
+    transform: translatey(120px);
     color: #fff;
     opacity: 0.8;
 } 
@@ -599,6 +599,13 @@ section.footer .container {
     }
     .icons-footer.text-center {
         margin-top: 20%;
+    }
+    .logo-footer img {
+        margin-left: 21%;
+
+    }
+    .icons-footer a.nav-link i::before {
+        font-size: 30px;
     }
  }
 @media(max-width:425px){
