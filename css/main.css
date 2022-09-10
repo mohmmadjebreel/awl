@@ -122,7 +122,7 @@ section.sarvices .container .row .col-3:nth-child(1){
     background-color:#E7F6F8 ;
    
 }
-section.sarvices .container .row .col-3:nth-child(2){
+section.sarvices .container .row .col-3:nth-child(3){
     background-color:#E8EBED ;
    
 }
@@ -131,9 +131,9 @@ section.sarvices .container .row .col-3:nth-child(2) img{
     padding-left: 3%;
     
 }
-section.sarvices .container .row .col-3:nth-child(3){
+section.sarvices .container .row .col-3:nth-child(2){
     background-color:#8383BE ;
-    color: #262649;   
+    color: #000000;   
 
 }
 section.sarvices .container .row .col-3:nth-child(3) i{
