@@ -181,7 +181,11 @@
 						</div>
 						<div class="btn-card single-product d-flex align-items-center flex-row-reverse">
 							<a href="#" class="btn-Features-book btn-single-product btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
-							<a href="#" class="btn-Features-book btn-single-product btn-colors"><i class="fa-regular fa-heart px-1"></i><i class="fa-solid fa-heart"></i> حفظ الكتاب</a>
+							<div class="icon-heart d-flex flex-row-reverse align-items-center" >
+								<a href="#" class=" heart"> </a>
+								<span class="mr-2"> حفظ الكتاب</span>
+							</div>
+
 							<div class="social-icons">
 								<a href="#"><i class="fa-brands fa-facebook"></i></a>
 								<a href="#"> <i class="fa-brands fa-twitter"></i></a>
@@ -204,17 +208,20 @@
 					<div class="col pb-5">
 						<div class="tabel-books col-8 py-3">
 							<div class="list-group d-flex align-items-center flex-row-reverse justify-content-around text-center" id="myTab" role="tablist">
-								<a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">سلسلة الاول الادبي</a>
-								<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">سلسلة الاول للعلمي</a>
+								<a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="tab" href="#list-home" role="tab" aria-controls="list-home">تفاصيل عن الكتاب </a>
+								<a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="tab" href="#list-profile" role="tab" aria-controls="list-profile">المراجعات </a>
 							</div>
 						</div>
                         
 						<div class="tab-content py-2 px-2 " id="myTabContent">
 							<div class="tab-pane fade show active " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                <div class="sub-tab details-tab-content py-3 my-3 d-flex flex-row-reverse justify-content-around bg-light rounded">
-                                    <div class="details-teacher d-flex flex-row-reverse text-right col-lg-6 col-md-6 col-sm-12">
-                                        <img src="imgs/bohemian-man-with-his-arms-crossed-removebg-preview.png" width="300" height="300" alt="" class="rounded" />
-                                        <div class="details-teacher-location px-3">
+                                <div class="sub-tab details-tab-content py-3 my-3 d-flex flex-row-reverse  justify-content-center bg-light rounded ">
+                                    <div class="details-teacher d-flex flex-row-reverse text-right col-lg-6 col-md-6 col-sm-12 ">
+										<div class="details-teacher-img col-lg-6 col-md-6 col-sm-12">
+											<img src="imgs/bohemian-man-with-his-arms-crossed-removebg-preview.png"  alt="" class="rounded" />
+
+										</div>
+                                        <div class="details-teacher-location px-3 col-lg-6 col-md-6 col-sm-12">
                                             <h5>المعلم فلان الفلاني</h5>
                                             <div class="product-ratting d-flex flex-row-reverse align-items-center py-2">
                                                 <i class="fa-solid fa-star"></i>
@@ -226,14 +233,21 @@
                                             </div>
                                             <h6 class="py-2">مكان الإقامة : مدينة غزة</h6>
                                             <h6>خبرة في مجال التعليم (5 سنوات )</h6>
+											<h5>نقاط التوزيع</h5>
+											<span>غزة,</span>
+											<span>رفح,</span>
+											<span>النصيرات,</span>
+											<span>خانيونس,</span>
+											<span>الضفة</span>
+
                                         </div>
                                     </div>
-                                    <div class="details-book">
-                                        <div class="details-book-h5 text-right">
+                                    <div class="details-book col-lg-6 col-md-6 col-sm-12">
+                                        <div class="details-book-h5 text-right px-3">
                                             <h5>محاور الكتاب</h5>
                                         </div>
                                         <div class="details-book-ul d-flex flex-row-reverse">
-                                            <div class="details-book-ul-1">
+                                            <div class="details-book-ul-1 col-lg-6 col-md-6 col-sm-12">
                                                 <ul class="direction-rtl py-2">
                                                     <li>مثال لنص يمكن أن يستبدل</li>
                                                     <li>مثال لنص يمكن أن يستبدل</li>
@@ -241,7 +255,7 @@
                                                     <li>مثال لنص يمكن أن يستبدل</li>
                                                 </ul>
                                             </div>
-                                            <div class="details-book-ul-2">
+                                            <div class="details-book-ul-2 col-lg-6 col-md-6 col-sm-12">
                                                 <ul class="direction-rtl py-2">
                                                     <li>مثال لنص يمكن أن يستبدل</li>
                                                     <li>مثال لنص يمكن أن يستبدل</li>
@@ -255,8 +269,70 @@
 								
 							</div>
 							<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+								<div class="details-rating color-fff direction-rtl w-75  py-3">
+									<p>إضافة مراجعة </p>
+									<p>لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة محددة *</p>
+									<div class="details-rating-star">
+										<fieldset class="rating">
+											<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+											<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+											<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+											<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+											<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+											<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+											<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+											<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+											<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+										</fieldset>
+									  </div>
+									<div class="row py-3 ">
+										<div class="col-lg-6 col-md-6 col-sm-12">
+											<input type="text" class="form-control" placeholder="* اسمك" aria-label="First name">
+										  </div>
+										  <div class="col-lg-6 col-md-6 col-sm-12">
+											<input type="email" class="form-control direction-rtl" placeholder="* البريد الالكتروني , رقم الهاتف" aria-label="Last name">
+										  </div>
+									</div>
+									<div class="col py-3">
+										<textarea class="form-control" id="exampleFormControlTextarea1"  placeholder=" * رايك " rows="3"></textarea>
+									  </div>	
+									  <div class="btn-card single-product d-flex align-items-center flex-row-reverse">
+										<a href="#" class="btn-details-send btn-Features-book btn-single-product btn-colors"><i class="fa-solid fa-paper-plane"></i>اضافة التعليق</a>
+									 </div>
+									 
 
-								test
+								</div>
+								<div class="details-comment bg-light rounded py-4  ">
+									<div class="details-comment-sub d-flex flex-row-reverse   ">
+										<img class=" rounded-circle  py-2 px-2 " src="imgs/296447430_5329857977093682_8834998415153960810_n.jpg"  alt="">
+									<div class="details-comment-text d-flex flex-row-reverse justify-content-between w-75">
+										<div class="details-comment-text-name ">
+											<h6> محمد جبريل</h6>
+										</div>
+										<div class="details-comment-text-date">
+											<h6>20/8/2022</h6>
+										</div>
+										
+									</div>
+									
+									</div>
+									<div class="details-rating-text px-5  py-2">
+										<div class="product-ratting d-flex flex-row-reverse align-items-center  pr-5">
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											<i class="fa-solid fa-star"></i>
+											
+										</div>
+										<div class="details-comment-text-user direction-rtl">
+											<p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل 
+												هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+												</p>
+									</div>
+									</div>
+								
+								</div>
 							</div>
 						</div>
 					</div>
@@ -264,6 +340,226 @@
 			</div>
 		</section>
 		<!-- end details -->
+		        <!-- start Features-book -->
+				<section class="Features-book">
+					<div class="container">
+						<div class="row">
+							<div class="h3-title py-5">
+								<h3>كتب مميزة </h3>
+							</div>
+							  <!-- slide-book -->
+							<div class="splide">
+								<div class="splide__track">
+									<div class="splide__list">
+										<div onclick="window.location.href='product.html';" class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+											<div class="card card-features bg-light text-dark">
+												
+												<img class="img-card" src="imgs/deen12.jpg" alt="book" >
+												<div class="content">
+													<h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+													<div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+														<div class="icons">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+														</div>
+														<div class="price w-50 d-flex justify-content-around ">
+															<p>₪30</p>
+															<p>₪30</p>
+														</div>
+													</div>
+													<div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+											<div class="card card-features bg-light text-dark">
+												
+												<img class="img-card" src="imgs/deen12.jpg" alt="book" >
+												<div class="content">
+													<h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+													<div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+														<div class="icons">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+														</div>
+														<div class="price w-50 d-flex justify-content-around ">
+															<p>₪30</p>
+															<p>₪30</p>
+														</div>
+													</div>
+													<div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+											<div class="card card-features bg-light text-dark">
+												
+												<img class="img-card" src="imgs/deen12.jpg" alt="book" >
+												<div class="content">
+													<h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+													<div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+														<div class="icons">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+														</div>
+														<div class="price w-50 d-flex justify-content-around">
+															<p>₪30</p>
+															<p>₪30</p>
+														</div>
+													</div>
+													<div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+											<div class="card card-features bg-light text-dark">
+												
+												<img class="img-card" src="imgs/deen12.jpg" alt="book" >
+												<div class="content">
+													<h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+													<div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+														<div class="icons">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+														</div>
+														<div class="price w-50 d-flex justify-content-around ">
+															<p>₪30</p>
+															<p>₪30</p>
+														</div>
+													</div>
+													<div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+											<div class="card card-features bg-light text-dark">
+												
+												<img class="img-card" src="imgs/deen12.jpg" alt="book" >
+												<div class="content">
+													<h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+													<div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+														<div class="icons">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+														</div>
+														<div class="price w-50 d-flex justify-content-around ">
+															<p>₪30</p>
+															<p>₪30</p>
+														</div>
+													</div>
+													<div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i> </a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3 col-md-4 col-sm-12 splide__slide  ">
+											<div class="card card-features bg-light text-dark">
+												
+												<img class="img-card" src="imgs/deen12.jpg" alt="book" >
+												<div class="content">
+													<h5 class="card-title">كراسة التربية الإسلامية الفصل الاول  </h5>
+													<div class="price-icon pb-3 d-flex flex-row-reverse justify-content-around align-items-center">
+														<div class="icons">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+														</div>
+														<div class="price w-50 d-flex justify-content-around ">
+															<p>₪30</p>
+															<p>₪30</p>
+														</div>
+													</div>
+													<div class="btn-card d-flex align-items-center flex-row-reverse justify-content-around">
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-solid fa-bag-shopping"></i>إضافة الى السلة</a>
+														<a href="#" class="btn-Features-book btn-colors"><i class="fa-regular fa-heart"></i></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- slide-book -->
+						</div>
+						</div>
+					</div>
+				</section>
+				<!-- end Features-book -->
+				<!-- start footer -->
+
+				<section class="footer pt-5 ">
+				<div class="container ">
+					<div class="row d-flex justify-content-between flex-row-reverse align-items-center">
+					<div class="logo-footer col-lg-3 col-md-12 mb-12  ">
+						<img src="imgs/logo.png" width="300px" height="500px" alt="">
+					</div>
+					<div class="menu-footer d-flex justify-content-center text-right col-lg-3 col-md-12 mb-12 ">
+							<div class="menu1">
+								<h6 class="dropdown-header">روابط سريعة </h6>
+								<a class="dropdown-item" href="#">كفية عمل طلبية </a>
+								<a class="dropdown-item" href="#">الاسئلة الشائعة</a>
+								<a class="dropdown-item" href="#">ابلغ عن مشكلة </a>
+							</div>
+							<div class="menu2">
+								<h6 class="dropdown-header">روابط سريعة </h6>
+								<a class="dropdown-item" href="#">كفية عمل طلبية </a>
+								<a class="dropdown-item" href="#">الاسئلة الشائعة</a>
+								<a class="dropdown-item" href="#">ابلغ عن مشكلة </a>
+							</div>
+					</div>
+					<div class="icons-div-footer col-lg-3 col-md-12 mb-12 ">
+						<div class="icons-footer text-center">
+							<h4>تابعنا</h4>
+						<div class="btn-header btn d-flex justify-content-center ">
+							<a class="nav-link" href="#"> <i class="fa-brands fa-instagram"></i></a>
+							<a class="nav-link" href="#"> <i class="fa-brands fa-whatsapp"></i> </i></a>
+							<a class="nav-link" href="#"> <i class="fa-brands fa-facebook-messenger"></i></a>
+							<a class="nav-link" href="#"> <i class="fa-brands fa-facebook"></i></a>
+							
+						</div>
+						</div>
+					</div>
+					</div>
+					
+				</div>
+			</section>
+			<section class="footer2">
+				<div class="container  text-center py-2 text-white">
+				<h5>© 2022 جميع الحقوق محفوظة</h5>
+				</div>
+			</section>
+			<!-- end footer -->
 		<!-- start js -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -330,6 +626,31 @@
 			     $('.button-count:last-child').prop('disabled', true);
 			 }
 			 });
+			 var elms = document.getElementsByClassName( 'splide' );
+
+			for ( var i = 0; i < elms.length; i++ ) {
+			new Splide( elms[ i ] ).mount();
+			new Splide(elms[i]),{
+					type:'loop',
+					perPage: 4,
+					gap    : '2rem',
+					breakpoints: {
+					1200: { fixedWidth: 200 },
+					800 : { perPage: 2 },
+					640 : {perPage: 1,
+					gap    : '5px',},
+					480: {
+					perPage: 1,
+					gap    : '5px',
+				
+					},
+
+			}}}
+			$(function() {
+				$(".heart").on("click", function() {
+				$(this).toggleClass("is-active");
+			});
+			});
 		</script>
 		<!-- end js -->
 	</body>

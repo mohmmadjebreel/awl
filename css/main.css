@@ -3,6 +3,9 @@ body{
     font-family: cairo;
     
 }
+.color-fff{
+    color: #FFF;
+}
 .direction-rtl{
     direction:rtl
 }
@@ -291,14 +294,14 @@ a.btn-Features-book.btn-colors:hover {
     border: 3px solid #1e3b4a;
     border-radius: 5px;
 }
-.form-check-input[type=checkbox] {
+/* .form-check-input[type=checkbox] {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     top: -4px;
     background: #f000;
-}
+}  */
 .form-check-input:checked[type=checkbox]{background-image: unset;}
 .card-body {
     font-size: 12px;
@@ -498,7 +501,7 @@ section.footer .container {
 	margin-top:16px;
 }
 /* end whatsapp */
-     
+/* start media responsive */
  @media (max-width: 1200px){ 
     section.section-header .container .row .imgs img {
         width: 100%;
@@ -552,7 +555,7 @@ section.footer .container {
         margin-bottom: 5%;
         font-size: 13px;
     }
-    img {
+    .section-header .container .row  img {
         width: 410px;
         height: auto;
     }
@@ -615,6 +618,11 @@ section.footer .container {
     .icons-footer a.nav-link i::before {
         font-size: 30px;
     }
+    .btn-card.btns-cart.d-flex.align-items-center.flex-row-reverse.justify-content-around.w-50:before {bottom: 1%};
+    .tab-pane .details-comment > .details-rating-text {
+        margin-left: 2% !important;
+        margin-top: -6% !important;
+    }
  }
 @media(max-width:425px){
     .section-header .container .w-50 form.d-flex.w-75 {
@@ -632,6 +640,10 @@ section.footer .container {
         flex-direction: column !important;
     }
     section.form-book  .form-book-input {padding: unset !important;}
+    .tab-pane .details-comment > .details-rating-text {
+        margin-left: 2% !important;
+        margin-top: -6% !important;
+    }
 }
  @media (min-width: 768px){
     .col-md-4 {
@@ -643,6 +655,12 @@ section.footer .container {
     .col-lg-3 {
         flex: 0 0 auto;
         width: 25% !important;
+    }
+    /* details */
+    .details-rating-text.px-5 {
+        margin-left: 23%;
+        margin-top: -9%;
+        width: 70% !important;
     }
 }
 
@@ -744,12 +762,101 @@ a.btn-single-product i.fa-heart:hover  {
     color: #f00 !important;
     
 }
+/*  TWITTER HEART */
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+  }
+  .heart.is-active {
+    transition-duration: 1s;
+    background-position: -2800px 0;
+  }
+ .icon-heart span{
+    margin-right:-22px;
+ } 
+ /* end product */
+
 /* start details */
 section.details .container .row {
     background-color: #262649;
     border-radius: 9px;
    
 }
+.details-teacher.d-flex.flex-row-reverse.text-right.col-lg-6.col-md-6.col-sm-12 {
+    padding-right: 3%;
+}
+@media(max-width: 425px){
+    .details-teacher.d-flex.flex-row-reverse.text-right.col-lg-6.col-md-6.col-sm-12 , .sub-tab.details-tab-content,.details-book-ul
+    {
+        display: block !important;
+       
+       
+    }
+    .details-teacher-img img{width: 250px; margin: auto;}
+    .details-book-ul{padding: 0% 1% !important;} 
+    
+}
+@media(max-width:768){
+    .details-teacher.d-flex.flex-row-reverse.text-right.col-lg-6.col-md-6.col-sm-12 
+    {
+        display: block !important;
+       
+       
+    }
+    .sub-tab .details-teacher .details-teacher-img img.rounded{
+        width: 172px !important;
+         height: auto !important;}
+}
+
+.details-rating{margin: auto;}
+/* .rating { 
+    border: none;
+    float: left;
+  } */
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+  
+  .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+  }
+  
+  .rating > label { 
+    color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+  a.btn-details-send.btn-Features-book.btn-single-product.btn-colors {
+    padding: 1%;
+}
+.details-comment img {
+    width: 11%;
+    height: auto;
+    
+}
+
 /* end details */
 
 
