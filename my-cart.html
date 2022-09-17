@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.rtl.min.css.map" rel="stylesheet" />
+		<link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+		<link href="css/all.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+       
+    <title>الاول | سلة المشتريات</title>
+</head>
+<body>
+    <!-- Start header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container d-flex justify-content-between flex-lg-row-reverse">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#page-top">
+            <img class="col-sm-12" src="imgs/logo.png" width="100" height="100" alt="logo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto " style="direction: rtl;">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">كيفية عمل طلبية </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> أراء الطالب بنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ملفات مجانية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">الإختبارات الإلكترونية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">أفضل معلم</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" style="direction: rtl;">
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa-solid fa-user" style="padding: 5px;"></i>إسم
+                  المستخدم</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa-solid fa-heart"
+                    style="padding: 5px;"></i>المفضلة</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link position-relative" href="#"><i class="fa-solid fa-bag-shopping"
+                    style="padding: 5px;"></i>سلة المشتريات
+                  <span id="notification-number"
+                    class="position-absolute  badge rounded-pill bg-danger">
+                    0
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+	<!-- start section header -->
+    
+  <div class="pb-5">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5 direction-rtl ">
+          <h4> سلة المشتريات <span> (3)</span></h4>
+          <h6>
+            شحن مجاني للضفة عند طلبك أي 5 كتب متشابهة أو متنوعة ، وب10 شيكل للقدس.. <a class="text-decoration-none bg-danger text-white px-2 my-4 rounded" href="#">تحتاج إلى إدخال كود خصم</a>
+
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+      
+        <div class="pb-5">
+          <div class="container">
+            <div class="row ">
+              <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+      
+                <!-- Shopping cart table -->
+                <div class="table-responsive">
+                  <table class="table direction-rtl">
+                    <thead>
+                      
+                      <tr>
+                        
+                        <!-- <th scope="col" class="border-0 bg-light ">
+                          <div class="form-check">
+                        
+                          </label>
+                        </div></th> -->
+                        <th scope="col" class="border-0 bg-light d-flex align-items-center px-3" >
+                          <input class="form-check-input" type="checkbox" value="" id="checkAll" ></div>
+                          <div class="p-2 px-3 text-uppercase">تحديد المنتجات</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">السعر</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">السعر بعد الخصم</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">الكمية</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">المفضلة</div>
+                        </th>
+                        <th scope="col" class="border-0 bg-light">
+                          <div class="py-2 text-uppercase">حذف</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" class="border-0">
+                          <div class="p-2">
+                             <!-- input --><input class="form-check-input mt-5" type="checkbox" value="" id="chechboxTwo" name="chk-list-home-list">
+                            <img src="../AWL/imgs/deen12.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0 "> <a href="#" class="text-dark d-inline-block align-middle">منتج رقم 1</a></h5> <p class="text-muted font-weight-normal font-italic d-block text-center">نوع: <span>فصلين </span> <span>وزاري</span> <span>ملون</span></p>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="border-0 align-middle"><strong>₪79.00</strong></td>
+                        <td class="border-0 align-middle"><strong>₪60.00</strong></td>
+                        <td class="border-0 align-middle"><strong><span>+</span> 3 <span>-</span></strong></td>
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa-regular fa-heart"></i></td>
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <!-- input --><input class="form-check-input  mt-5" type="checkbox" value="" id="chechboxThree" name="chk-list-home-list">
+                            <img src="../AWL/imgs/deen12.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"><a href="#" class="text-dark d-inline-block">منتج رقم 2</a></h5> <p class="text-muted font-weight-normal font-italic d-block">نوع: <span>فصلين </span> <span>وزاري</span> <span>ملون</span></p>
+                            </div>
+                          </div>
+                        </th>
+                        <td class="align-middle"><strong>₪79.00</strong></td>
+                        <td class="border-0 align-middle"><strong>₪60.00</strong></td>
+                        <td class="border-0 align-middle"><strong><span>+</span> 3 <span>-</span></strong></td>
+                        <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa-regular fa-heart"></i></td>
+                        <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                          <div class="p-2">
+                            <input class="form-check-input  mt-5"  type="checkbox" value="" id="chechboxFour" name="chk-list-home-list">
+                            <img src="../AWL/imgs/deen12.jpg" alt="" width="70" class="img-fluid rounded shadow-sm">
+                            
+                            <div class="ml-3 d-inline-block align-middle">
+                              <h5 class="mb-0"> <a href="#" class="text-dark d-inline-block">منتج رقم 2</a></h5> <p class="text-muted font-weight-normal font-italic d-block">نوع: <span>فصلين </span> <span>وزاري</span> <span>ملون</span></p>
+                            </div>
+                          </div>
+                          <td class="align-middle"><strong>₪79.00</strong></td>
+                          <td class="border-0 align-middle"><strong>₪60.00</strong></td>
+                          <td class="border-0 align-middle"><strong><span>+</span> 3 <span>-</span></strong></td>
+                          <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa-regular fa-heart"></i></td>
+                          <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- End -->
+              </div>
+            </div>
+      
+            <div class="row py-5 p-4 bg-white rounded shadow-sm direction-rtl">
+              <div class="col-lg-6">
+                <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">كود الخصم</div>
+                <div class="p-4">
+                  <label for="page">حدد كود الخصم</label>
+                      <select class="custom-select d-block w-100 text-right rounded" id="page" required="">
+                          <option value="">حدد</option>
+                          <option>صفحة القدس </option>
+                          <option>صفحة غزة الان</option>
+                          <option>طلاب توجيهي</option>
+                          <option> اخرى<input type="text" class="my-2 w-100" placeholder=" اذاقمت باختيار غير ذلك نرجو منك كتابة المصدر للحصول على الخصم" ></option>
+                      </select>
+                  <p class="font-italic mb-4">إذا كان لديك رمز قسيمة ، يرجى إدخاله في المربع أدناه</p>
+                  <div class="input-group mb-4 border rounded-pill p-2">
+                    <input type="text" placeholder="ضع الكود" aria-describedby="button-addon3" class="form-control border-0">
+                    <div class="input-group-append border-0">
+                      <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill"><i class="fa fa-gift mr-2 px-2"></i>تفعيل </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">ملاحظات البائع</div>
+                <div class="p-4">
+                  <p class="font-italic mb-4">إذا كانت لديك بعض المعلومات للبائع ، فيمكنك تركها في المربع أدناه</p>
+                  <textarea name="" cols="30" rows="2" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">ملخص الطلب </div>
+                <div class="p-4">
+                  <p class="font-italic mb-4">يتم احتساب تكاليف الشحن والتكاليف الإضافية بناءً على القيم التي أدخلتها</p>
+                  <ul class="list-unstyled mb-4">
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">مجموع الطلبيات </strong><strong>₪390.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">تكاليف الشحن</strong><strong> <select class="custom-select d-block w-100 text-right rounded" id="shpping-fee" required="">
+                      <option value="">حدد المنطقة</option>
+                      <option> القدس ₪15.00</option>
+                      <option>الضفة ₪25.00</option> </select></strong></li>
+                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">خصومات الكتب</strong><strong>₪5.00</strong></li>
+                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">خصومات السلاسل</strong><strong>₪2.00</strong></li>
+                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">خصومات الكميات</strong><strong>₪10.00</strong></li>
+                      <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">الخصم الكلي</strong><strong>₪32.00</strong></li>
+                    <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">المجموع الكلي</strong>
+                      <h5 class="font-weight-bold">₪400.00</h5>
+                    </li>
+                  </ul><a href="#" class="btn btn-dark rounded-pill py-2 btn-block">أكمل عملية الطلب</a>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      <!-- start footer -->
+
+	<section class="footer pt-5 ">
+		<div class="container ">
+			<div class="row d-flex justify-content-between flex-row-reverse align-items-center">
+				<div class="logo-footer col-lg-3 col-md-12 mb-12  ">
+					<img src="imgs/logo.png" width="300px" height="500px" alt="">
+				</div>
+				<div class="menu-footer d-flex justify-content-center text-right col-lg-3 col-md-12 mb-12 ">
+					<div class="menu1">
+						<h6 class="dropdown-header">روابط سريعة </h6>
+						<a class="dropdown-item" href="#">كفية عمل طلبية </a>
+						<a class="dropdown-item" href="#">الاسئلة الشائعة</a>
+						<a class="dropdown-item" href="#">ابلغ عن مشكلة </a>
+					</div>
+					<div class="menu2">
+						<h6 class="dropdown-header">روابط سريعة </h6>
+						<a class="dropdown-item" href="#">كفية عمل طلبية </a>
+						<a class="dropdown-item" href="#">الاسئلة الشائعة</a>
+						<a class="dropdown-item" href="#">ابلغ عن مشكلة </a>
+					</div>
+				</div>
+				<div class="icons-div-footer col-lg-3 col-md-12 mb-12 ">
+					<div class="icons-footer text-center">
+						<h4>تابعنا</h4>
+						<div class="btn-header btn d-flex justify-content-center ">
+							<a class="nav-link" href="#"> <i class="fa-brands fa-instagram"></i></a>
+							<a class="nav-link" href="#"> <i class="fa-brands fa-whatsapp"></i> </i></a>
+							<a class="nav-link" href="#"> <i class="fa-brands fa-facebook-messenger"></i></a>
+							<a class="nav-link" href="#"> <i class="fa-brands fa-facebook"></i></a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="footer2">
+		<div class="container  text-center py-2 text-white">
+			<h5>© 2022 جميع الحقوق محفوظة</h5>
+		</div>
+	</section>
+	<!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      function selects() {
+            var ele = document.getElementsByName('chk-list-home-list');
+            for (var i = 0; i < ele.length; i++) {
+                if (ele[i].type == 'checkbox')
+                    ele[i].checked = true;
+            }
+        }
+    </script>
+</body>
+</html>
