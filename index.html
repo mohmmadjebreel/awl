@@ -98,15 +98,46 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body ">
-                    <div class="mb-3">
+                    <div class="aera  py-1">
+                        <p>حدد المنطقة</p>
+                    <input type="radio" name="contact" value="email" onclick="text(1)"  />
+
+                    <label for="email">غزة</label>
+
+                    <input type="radio" name="contact" value="phone" onclick="text(0)"/>
+
+                    <label for="phone">الضفة و القدس </label>
+                    </div>
+                    <div style="display: none !important;" class="d-flex flex-row align-items-center mb-4" id="input-phone" >
+                    <!-- <i class="fas fa-phone fa-lg me-3 fa-fw mt-4"></i> -->
+                    <div class="form-outline flex-fill mb-0">
+                    
+                        <label class="form-label" for="form3Example3c"> رقم الهاتف</label>
+                    
+                        <input type="phone" id="form3Example3c" class="form-control" />
+                    
+                    </div>
+                    
+                    </div>
+                    <div style="display: none !important;" class="d-flex flex-row align-items-center mb-4" id="input-email">
+                        <!-- <i class="fas fa-envelope fa-lg me-3 fa-fw mt-4"></i> -->
+                        <div class="form-outline flex-fill mb-0">
+                        
+                        <label class="form-label" for="form3Example3c">البريد الالكتروني </label>
+                        
+                        <input type="email" id="form3Example3c" class="form-control" />
+                        
+                        </div>
+                    </div>
+                    <!-- <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">البريد الالكتروني او رقم الهاتف</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1"
                             placeholder="name@example.com">
-                    </div>
+                    </div>-->
                     <div class="mb-3 ">
                         <label for="inputPassword" class="col-sm-2 col-form-label">كلمة المرور</label>
                         <input type="password" class="form-control" id="inputPassword">
-                    </div>
+                    </div> 
                     <a class="nav-link" href="#">نسيت كلمة المرور</a>
                     <a class="nav-link" href="#">ليس لديك حساب؟ انشاء حساب </a>
                     <div class="text-center my-2">
@@ -2640,6 +2671,23 @@
 
         const checkboxes = document.getElementsByName('chk-list-home-list')
         checkboxes.forEach(checkbox => checkbox.addEventListener('click', e => e.stopPropagation()))
+        function text(x){
+            console.log(x)
+            if ( x==0 ){document.getElementById("input-phone").style.setProperty("display","flex", "important");
+            
+            document.getElementById("input-email").style.setProperty("display","none", "important");
+                        
+                        } 
+            else if ( x==1) {document.getElementById("input-email").style.setProperty("display","flex", "important");
+            document.getElementById("input-phone").style.setProperty("display","none", "important");
+                            
+
+            } else { document.getElementById("input-phone").style.setProperty("display","none", "important");
+                    document.getElementById("input-email").style.setProperty("display","none", "important");
+            }
+        
+            return
+        }
 
 
     </script>
