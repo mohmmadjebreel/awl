@@ -931,3 +931,4 @@ select.mr-2.form-control {
 }
 .card-title span.w-50 .fa-comment::before{color: #2196F3;}
 .info-techer.social-icons i{ font-size: 25px;}
+/* #input-phone.d-flex{display: none !important;} */
