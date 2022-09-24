@@ -122,31 +122,32 @@
                             <strong>₪20</strong>
                         </li>
                     </ul>
-                    <form class="card p-2 ">
+                    <!-- <form class="card p-2 ">
                         <div class="input-group d-flex flex-row-reverse">
                             <input type="text" class="form-control" placeholder="ضع كود الخصم">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-secondary">تفعيل</button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
                 </div>
                 <div class="col-md-8 order-md-1 text-right">
                     <h4 class="mb-3">عنوان الفاتورة</h4>
                     <form class="needs-validation" novalidate="">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label for="firstName">الاسم الاول</label>
-                                <input type="text" class="form-control text-right" id="firstName" placeholder="" value="" required="">
-                                <div class="invalid-feedback"> ضع اسمك ليكتمل الطلب </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
                                 <label for="lastName">اسم العائلة</label>
                                 <input type="text" class="form-control text-right" id="lastName" placeholder="" value="" required="">
                                 <div class="invalid-feedback"> ضع اسم العائلة ليكتمل الطلب </div>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">الاسم الاول</label>
+                                <input type="text" class="form-control text-right" id="firstName" placeholder="" value="" required="">
+                                <div class="invalid-feedback"> ضع اسمك ليكتمل الطلب </div>
+                            </div>
+                            
                         </div>
-                        <div class="mb-3">
+                        <!-- <div class="mb-3">
                             <label for="username">ضع اسمك بالانجليزي ليتم انشاء حساب على الموقع</label>
                             <div class="input-group flex-row-reverse ">
                                 <div class="input-group-prepend">
@@ -155,37 +156,22 @@
                                 <input type="text" class="form-control text-right" id="username" placeholder="الاسم بالانجليزي " required="">
                                 <div class="invalid-feedback" style="width: 100%;"> من الضروري التاكد بكاتبة اسمك واسم عئلتك بالانجليزي  </div>
                             </div>
-                        </div>
-                        <div class="mb-3">
+                        </div> -->
+                        <!-- <div class="mb-3">
                             <label for="email">البريد الالكتروني <span class="text-muted">اختياري</span></label>
                             <input type="email" class="form-control text-right" id="email" placeholder="you@example.com">
                             <div class="invalid-feedback"> الرجاء إدخال عنوان بريد إلكتروني صالح لتحديثات الشحن. </div>
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                             <label for="phone">رقم الهاتف</label>
-                            <input type="phone" class="form-control text-right" id="phone" placeholder="0597736062" required="">
+                            <input type="phone" class="form-control text-right" id="phone" placeholder="0569202199" required="">
                             <div class="invalid-feedback"> يرجى إدخال رقم الهاتف الخاص بك. </div>
                         </div>
                         <div class="mb-3">
                             <label for="phone">رقم هاتف إضافي</label>
-                            <input type="phone" class="form-control text-right" id="phone" placeholder="0597736062" required="">
+                            <input type="phone" class="form-control text-right" id="phone2" placeholder="0569202199" required="">
                             <div class="invalid-feedback"> يرجى إدخال رقم الهاتف الخاص بك. </div>
                         </div>
-                        <!-- <div class="mb-3">
-                            <label for="phone">رقم الهاتف  <span class="text-muted">اختياري</span></label>
-                            <input type="phone" class="form-control text-right" id="phone2" placeholder="0597736062" >
-                            <div class="invalid-feedback"> يرجى إدخال رقم الهاتف الخاص بك. </div>
-                        </div> -->
-                        <div class="mb-3">
-                            <label for="address">العنوان</label>
-                            <input type="text" class="form-control text-right" id="address" placeholder="1234 Main St" required="">
-                            <div class="invalid-feedback"> يرجى إدخال عنوان الشحن الخاص بك. </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="address2">العنوان  <span class="text-muted">اختياري</span></label>
-                            <input type="text" class="form-control text-right" id="address2" placeholder="اقرب مدرسة او مشفى او مسجد لديك">
-                        </div>
-
                         <div class="row">
                             <div class="col-md-12 mb-12">
                                 <label for="country">المدينة</label>
@@ -213,6 +199,22 @@
                                 </select>
                                 <div class="invalid-feedback"> الرجاء تحديد المدينة . </div>
                             </div>
+                        <!-- <div class="mb-3">
+                            <label for="phone">رقم الهاتف  <span class="text-muted">اختياري</span></label>
+                            <input type="phone" class="form-control text-right" id="phone2" placeholder="0597736062" >
+                            <div class="invalid-feedback"> يرجى إدخال رقم الهاتف الخاص بك. </div>
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="address">العنوان</label>
+                            <input type="text" class="form-control text-right" id="address" placeholder="اقرب مسجد ,مشفى ,سوبر ماركت" required="">
+                            <div class="invalid-feedback"> يرجى إدخال عنوان الشحن الخاص بك. </div>
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="address2">العنوان  <span class="text-muted">اختياري</span></label>
+                            <input type="text" class="form-control text-right" id="address2" placeholder="اقرب مدرسة او مشفى او مسجد لديك">
+                        </div> -->
+
+                     
                             <!-- <div class="col-md-4 mb-3">
                                 <label for="state">State</label>
                                 <select class="custom-select d-block w-100" id="state" required="">
@@ -279,7 +281,7 @@
                         </div> -->
                         <hr class="mb-4">
                         <button class="btn btn-primary btn-lg btn-block" type="submit">اكمال عملية الطلب</button>
-                    </form>
+                    
                 </div>
             </div>
         </div>
