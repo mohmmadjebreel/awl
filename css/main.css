@@ -366,7 +366,7 @@ background-color: #E7F6F8;
     border-radius: 9px;
     margin: 0% 1%;
 }
-.btn-card.btns-cart.d-flex.align-items-center.flex-row-reverse.justify-content-around.w-50:before {
+/* .btn-card.btns-cart.d-flex.align-items-center.flex-row-reverse.justify-content-around.w-50:before {
     content: "خصم خاص على جميع الكتب";
     position: absolute;
     color: #fff;
@@ -374,7 +374,7 @@ background-color: #E7F6F8;
     padding: 8px;
     border-radius: 5px;
     bottom: 8%;
-}
+} */
 
 /* end selsela */
 /* start any books  */
@@ -872,6 +872,15 @@ section.details .container .row {
 .table>:not(caption)>*>* {
     
     border-bottom-width: 0px;}
+.quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
 
 /* page checkout */
 /* page how to add order */

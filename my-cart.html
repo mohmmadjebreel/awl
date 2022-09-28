@@ -138,7 +138,7 @@
                         </th>
                         <td class="border-0 align-middle"><strong>₪79.00</strong></td>
                         <td class="border-0 align-middle"><strong>₪60.00</strong></td>
-                        <td class="border-0 align-middle"><strong><span>+</span> 3 <span>-</span></strong></td>
+                        <td class="border-0 align-middle "><strong class="quantity" ><span class="plus-btn" name="button">+</span>   <input type="text" readonly  value="1"> <span class="minus-btn "  name="button">-</span></strong></td>
                         <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa-regular fa-heart"></i></td>
                         <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a></td>
                       </tr>
@@ -154,7 +154,7 @@
                         </th>
                         <td class="align-middle"><strong>₪79.00</strong></td>
                         <td class="border-0 align-middle"><strong>₪60.00</strong></td>
-                        <td class="border-0 align-middle"><strong><span>+</span> 3 <span>-</span></strong></td>
+                        <td class="border-0 align-middle "><strong class="quantity" ><span class="plus-btn" name="button">+</span>   <input type="text" readonly  value="1"> <span class="minus-btn "  name="button">-</span></strong></td>
                         <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa-regular fa-heart"></i></td>
                         <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
                         </td>
@@ -171,7 +171,7 @@
                           </div>
                           <td class="align-middle"><strong>₪79.00</strong></td>
                           <td class="border-0 align-middle"><strong>₪60.00</strong></td>
-                          <td class="border-0 align-middle"><strong><span>+</span> 3 <span>-</span></strong></td>
+                          <td class="border-0 align-middle "><strong class="quantity" ><span class="plus-btn" name="button">+</span>   <input type="text" readonly  value="1"> <span class="minus-btn "  name="button">-</span></strong></td>
                           <td class="border-0 align-middle"><a href="#" class="text-dark"><i class="fa-regular fa-heart"></i></td>
                           <td class="align-middle"><a href="#" class="text-dark"><i class="fa fa-trash"></i></a>
                           </td>
@@ -290,6 +290,43 @@
                     ele[i].checked = true;
             }
         }
+       
+
+      
+    $('.minus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('strong').find('input');
+        var value = parseInt($input.val());
+    
+        if (value > 1) {
+            value = value - 1;
+        } else {
+            value = 0;
+        }
+    
+      $input.val(value);
+    
+    });
+    
+    $('.plus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('strong').find('input');
+        var value = parseInt($input.val());
+    
+        if (value < 100) {
+            value = value + 1;
+        } else {
+            value =100;
+        }
+    
+        $input.val(value);
+});
+
+
+
+
     </script>
 </body>
 </html>
